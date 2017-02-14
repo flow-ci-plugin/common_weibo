@@ -1,0 +1,23 @@
+name: weibo_message
+version: 0.0.1
+language: 
+description: weibo message sender, should send message to users who bind the weibo user to flow.ci
+tags:
+ - weibo
+ - message
+ - sender
+
+public: true
+
+# clone_in_docker: false
+
+inputs:
+  - name: FLOW_WEIBO_MESSAGE_USER_IDS
+    editable: true
+
+  - name: FLOW_WEIBO_MESSAGE_DESCRIPTION
+    editable: true
+
+outputs:
+
+script_path: ./run.sh
